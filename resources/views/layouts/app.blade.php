@@ -24,9 +24,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js" integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA==" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="{{ asset('js/main.js') }}" defer></script>
-    <script src="{{ asset('js/sample.js') }}" ></script>
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <script src="{{ secure_asset('js/main.js') }}" defer></script>
+    <script src="{{ secure_asset('js/sample.js') }}" ></script>
     @yield('extra-js')
     
     <!-- Fonts -->
@@ -81,7 +81,7 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                     @if(Auth::user()->avatar)
-                                    <img src="{{asset('/storage/images/avatar/'.Auth::user()->avatar)}}" class="rounded-circle" alt="user_photo" width="40" height="40">
+                                    <img src="{{secure_asset('/storage/images/avatar/'.Auth::user()->avatar)}}" class="rounded-circle" alt="user_photo" width="40" height="40">
                                     @endif
                                    
                                 </a>

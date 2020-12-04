@@ -27,7 +27,7 @@
 	      <div class="row">
                
                   <div class="col-md-6">
-                  <img src="{{asset('images/'.$product->image.'.jpg')}}" class="img-fluid img-thumbnail">
+                  <img src="{{secure_asset('images/'.$product->image.'.jpg')}}" class="img-fluid img-thumbnail">
                   </div>
                
                   <div class="col-md-6">
