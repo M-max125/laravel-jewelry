@@ -23,7 +23,7 @@
   <section class="mast">
     
     <header class="mast__header">
-      <h1 class="mast__title js-spanize">Unique pieces of adornment</h1> 
+      <h1 class="mast__title js-spanize">Unique pieces of jewelry</h1> 
       <hr class="sep"/>
       <p class="mast__text js-spanize">
       
