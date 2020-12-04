@@ -12,7 +12,7 @@ class CreateProductsTable extends Migration
      * @return void
      */
     public function up()
-    {DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+    {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -25,7 +25,7 @@ class CreateProductsTable extends Migration
             // $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+        
     }
 
     /**
