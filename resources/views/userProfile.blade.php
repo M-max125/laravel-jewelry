@@ -27,7 +27,7 @@
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="container">
       @if($user->avatar)
-      <img src="{{Storage::url('/storage/images/avatar/'.$user->avatar)}}" class="img-fluid img-thumbnail mb-2" alt="user_avatar">
+      <img src="{{secure_asset('/storage/images/avatar/'.$user->avatar)}}" class="img-fluid img-thumbnail mb-2" alt="user_avatar">
       @else
       <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="img-thumbnail mb-2" alt="avatar">
       @endif
