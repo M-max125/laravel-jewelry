@@ -19,9 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/{any}', function () {
+Route::get('/linkstorage', function () {
     Artisan::call('storage:link');
-})->where('any', '.*');;
+});
 
 Route::get('/',[App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/{id}/products',[App\Http\Controllers\ProductController::class, 'index'])->name('products');
