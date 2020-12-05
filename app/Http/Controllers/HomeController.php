@@ -31,7 +31,7 @@ class HomeController extends Controller
             });
             $categoryName = optional($categories->where('slug',request()->category)->first())->name;
         }else{
-            $products = Product::take(18);
+            $products = Product::inRandomOrder()->take(18);
             $categoryName = 'Our Collection';
         }
 
